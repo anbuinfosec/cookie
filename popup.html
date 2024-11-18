@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Cookies</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="icon.png" alt="Logo" class="logo" />
+    <h1><i class="fas fa-cookie-bite"></i> Get Cookies</h1>
+    <select id="format" class="dropdown">
+      <option value="json">JSON</option>
+      <option value="text">Plain Text</option>
+    </select>
+    <br />
+    <button id="getCookies" class="btn">
+      <i class="fas fa-download"></i> Fetch Cookies
+    </button>
+    <div id="cookies" class="output hidden"></div>
+    <div id="actions" class="hidden">
+      <span>
+        <button id="copyCookies" class="btn hidden">
+          <i class="fas fa-copy"></i> Copy
+        </button>
+        <button id="exportAsText" class="btn hidden">
+          <i class="fas fa-file-export"></i> Export
+        </button>
+        <button id="exportAsJSON" class="btn hidden">
+          <i class="fas fa-file-code"></i> Export
+        </button>
+      </span>
+    </div>
+    <footer>
+      <a href="https://facebook.com/anbuinfosec" target="_blank" class="link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://github.com/anbuinfosec" target="_blank" class="link">
+        <i class="fab fa-github"></i> Github
+      </a>
+      <a href="https://twitter.com/anbuinfosec" target="_blank" class="link">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
